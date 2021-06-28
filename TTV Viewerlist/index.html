@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png"
+            href="https://static.twitchcdn.net/assets/favicon-32-e29e246c157142c94346.png">
+        <link rel="stylesheet" href="style.css">
+        <script src="./script.js" defer></script>
+        <title>TTV Viewerlist</title>
+    </head>
+    <body>
+        <h2>Twitch Viewerlist</h2>
+        <div class="setup">
+            <h2>SETUP</h2>
+            <h3>Enter Twitch username:</h3>
+            <form>
+                <input id="username" type="text" name="username" placeholder="Username">
+                <h3>Refreshrate:</h3>
+                <input type="range" name="rating" id="range" min="10"
+                    max="3600" step="5"><br>
+                <label for="range">120sec</label><br>
+                <button type="button" id="send">Get Viewers</button>
+            </form>
+        </div>
+        <div class="main">
+            <button type="button" id="refresh">Manual Refresh</button>
+            <button type="button" id="reset">Reset Setup</button>
+            <button type="button" id="change">Get Changes</button><br>
+            <input type="checkbox" id="hide">
+            <label for="checkbox">Hide Special Viewers</label><br>
+            <span class="count">
+                <p>Chattercount:</p>
+                <p id="small">Bots included</p>
+                <h1>0</h1>
+                <h4>±0</h4>
+            </span>
+        </div>
+        <div class="viewer">
+            <div class="box">
+                <span>
+                    <h2><u>MODERATORS</u></h2>
+                    <h2 id="modCount">Count: 0</h2>
+                    <textarea name="mod" cols="25" rows="15"
+                        placeholder="MODERATORS"></textarea>
+                </span>
+                <span>
+                    <h2><u>VIPS</u></h2>
+                    <h2 id="vipCount">Count: 0</h2>
+                    <textarea name="vip" cols="25" rows="15" placeholder="VIPS"></textarea>
+                </span>
+                <span>
+                    <h2><u>VIEWERS</u></h2>
+                    <h2 id="viewerCount">Count: 0</h2>
+                    <textarea name="viewers" cols="25" rows="15"
+                        placeholder="VIEWERS"></textarea>
+                </span>
+            </div>
+        </div>
+        <div class="special">
+            <div class="box">
+                <span>
+                    <h2><u>BROADCASTER</u></h2>
+                    <textarea name="broadcaster" cols="20" rows="10"
+                        placeholder="BROADCASTER"></textarea>
+                </span>
+                <span>
+                    <h2><u>STAFF</u></h2>
+                    <textarea name="staff" cols="20" rows="10"
+                        placeholder="STAFF"></textarea>
+                </span>
+                <span>
+                    <h2><u>ADMINS</u></h2>
+                    <textarea name="admins" cols="20" rows="10"
+                        placeholder="ADMINS"></textarea>
+                </span>
+                <span>
+                    <h2><u>GLOBALMODS</u></h2>
+                    <textarea name="globalmods" cols="20" rows="10"
+                        placeholder="GLOBALMODS"></textarea>
+                </span>
+            </div>
+        </div>
+    </body>
+</html>

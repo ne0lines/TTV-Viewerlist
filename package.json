@@ -1,0 +1,26 @@
+{
+  "name": "ttv-viewerlist",
+  "version": "1.0.0",
+  "description": "TTV-Viewerlist",
+  "main": "index.js",
+  "dependencies": {
+    "@types/mongodb": "^3.6.18",
+    "@types/node": "^15.12.5"
+  },
+  "devDependencies": {
+    "mongodb": "^3.6.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qlulezz/TTV-Viewerlist.git"
+  },
+  "author": "qlulezz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qlulezz/TTV-Viewerlist/issues"
+  },
+  "homepage": "https://github.com/qlulezz/TTV-Viewerlist#readme"
+}
