@@ -2,8 +2,7 @@
 
 **A simple Website that shows how many people are watching a stream, who that is and what category they are in.**
 
-##### Warning: Currently, this Websites uses direct connections to the Twitch API which are blocked by your Browser using CORS.
-##### Until this is fixed, you have to use a Browser-Addon such as this one available on [Firefox](https://addons.mozilla.org/en-US/firefox/addon/access-control-allow-origin/), [Chrome](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf), [Opera](https://addons.opera.com/en/extensions/details/allow-cors-access-control-allow-origin/) and [Edge](https://microsoftedge.microsoft.com/addons/detail/allow-cors-accesscontro/bhjepjpgngghppolkjdhckmnfphffdag).
+##### Warning: Currently, this website uses direct connections to the Twitch API which are blocked by your browser because of CORS. Until this is fixed, you have to use a Browser-Addon such as this one available on [Firefox](https://addons.mozilla.org/en-US/firefox/addon/access-control-allow-origin/), [Chrome](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf), [Opera](https://addons.opera.com/en/extensions/details/allow-cors-access-control-allow-origin/) and [Edge](https://microsoftedge.microsoft.com/addons/detail/allow-cors-accesscontro/bhjepjpgngghppolkjdhckmnfphffdag).
 
 ## How to use
 Open the Website [here](https://qlulezz.github.io/TTV-Viewerlist/).
@@ -18,16 +17,18 @@ For more information, look at the console log.
 
 ### Current Features: 
 - Simple User Interface with custom refresh rate.
-- Save selected user and time specified in Setup in the Browser
+- Save selected user and time specified in setup in the browser
 - Timer / Countdown to next refresh
-- Hide and Unhide Admins and Mods (since those textfields aren't used anyway)
+- Hide and unhide admins and mods (since those textfields aren't used anyway)
 
 #### Future Goals:
--  Rerout connection to Twitch via Node.js Server to stop CORS Errors
+-  Rerout connection to Twitch via Node.js server to stop CORS Errors
 -  Make it useable in Incognito Mode aswell
+-  Only refresh when twitch userlist updates
 -  Add custom timer textfield
--  Log multiple Streams at once
--  Save the changes in Viewers inside a textfile
+-  Better looking interface
+-  Log multiple streams at once
+-  Save the changes in Viewers inside another textfield or even a textfile
 -  Dark Mode / Light Mode switcher
 -  Quit the console logging (why do I do this)
 
