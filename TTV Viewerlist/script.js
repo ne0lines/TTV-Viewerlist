@@ -83,7 +83,6 @@ var viewerlist;
         console.log("Setup is not complete, no user selected.");
     }
     else {
-        console.log("LocalStorage is not empty", localStorage);
         if (localStorage.getItem("uname") == null) {
             console.log("No user was found in the LocalStorage");
         }
@@ -192,7 +191,7 @@ var viewerlist;
     }
     function resetEvent() {
         if (confirm("This will reset your setup.\n ") == true) {
-            localStorage.clear();
+            localStorage.removeItem("uname");
             window.location.reload();
         }
     }

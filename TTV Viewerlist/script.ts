@@ -115,7 +115,6 @@ namespace viewerlist {
     if (localStorage.getItem("uname") == null) {
         console.log("Setup is not complete, no user selected.");
     } else {
-        console.log("LocalStorage is not empty", localStorage);
         if (localStorage.getItem("uname") == null) {
             console.log("No user was found in the LocalStorage");
         }
@@ -228,7 +227,7 @@ namespace viewerlist {
     // Reset Setup and clear LocalStorage
     function resetEvent(): void {
         if (confirm("This will reset your setup.\n ") == true) {
-            localStorage.clear();
+            localStorage.removeItem("uname");
             window.location.reload();
         }
     }
