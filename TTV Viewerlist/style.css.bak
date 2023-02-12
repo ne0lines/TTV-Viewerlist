@@ -58,9 +58,6 @@ h1, h2, h4, p {
 .box span {
     padding: .5rem;
 }
-.special{
-	display:none;
-}
 
 input[type="text"] {
     color: white;
